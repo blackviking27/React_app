@@ -6,7 +6,9 @@ import Loader from '../Components/Loader';
 function Product(){
     
     const { id } = useParams()
-    const url = `https://5f64c824fb1b5700169c9479.mockapi.io/products/products/${id}`
+    
+    //URL to api
+    const url = `https://<random string>.mockapi.io/products/products/${id}`
     const [product, setProduct] = useState({
         loading: false,
         data: null,
